@@ -1,0 +1,17 @@
+PRUEBAS
+
+Prueba 1
+el valor que ingresa el usuario con la frecuencia de la señal es: 900
+Resulado final: BUENA NOTICIA.La señal Cruzo El Filtro
+
+Prueba 2
+el valor que ingresa el usuario con la frecuencia de la señal es: 1000
+Resulado final: BUENA NOTICIA.La señal Cruzo El Filtro
+
+Prueba 3
+el valor que ingresa el usuario con la frecuencia de la señal es: 500
+Resulado final: La Señal Fue Bloqueada Por El Filtro
+
+Prueba 4
+el valor que ingresa el usuario con la frecuencia de la señal es: 130
+Resulado final: La Señal Fue Bloqueada Por El Filtro:
