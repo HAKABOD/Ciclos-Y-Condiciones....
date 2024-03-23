@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNOQNJUhK+wkqCQT80o0hfv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/HAKABOD/Ciclos-Y-Condiciones..../blob/main/Actividad_3_000544456.ipynb%20CODIGO%20PYTHON\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input(\"Ingresa la frecuencia de la señal: \"))\n",
+        "o=300\n",
+        "u=1000\n",
+        "PI= 3.1416\n",
+        "e=2.718\n",
+        "          fdp = (1 / (o * math.sqrt(2* PI)))* e ** (-1/2 * (( x - u ) / o) ** 2) ###Ecuacion la función de densidad de probabilidad(fdp)\n",
+        "          porcent = 0\n",
+        "          x=0\n",
+        "for i in range(n):\n",
+        "   x+=1\n",
+        "   fdp =(1 / (0* math.sqrt(2 * PI))) * e ** (-1 / 2 *(( x - u) / o)**)\n",
+        "   porcent += fdp\n",
+        "   porcent_total = porcent\n",
+        "print(porcent_total)\n",
+        "\n",
+        "if porcent_total >0.30:\n",
+        "    print(BUENA NOTICIA.La señal Cruzo El Filtro:)\n",
+        "else:\n",
+        "    print(La Señal Fue Bloqueada Por El Filtro:)"
+      ],
+      "metadata": {
+        "id": "ffhBhaT2nxa1"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
