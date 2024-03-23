@@ -1,0 +1,18 @@
+ANALISIS
+
+Problema: calcular el filtrar señales utilizando la función de probabilidad de la campana de Gauss.
+
+Entrada: Es la frecuencia de la señal.
+
+Salida: La Espera Del algoritmo es un aviso mostrando "BUENAS NOTICIA. La Señal Cruza El Filtro " o si no muestra "la Señal Fue Bloqueada por el filtro".
+
+PROCESO
+
+1. El usuario ingresa la frecuencia capturada de la señal.
+2. Se procede calcular con la (fdp)la función de densidad de probabilidad de la campane de gaus.
+3. Se realiza la compracion probable acumulada con el treinta porciente pasada o no.
+4. Se Avisa con mensajito mostrandole al usurario (SI) La señal cruza (BUENA NOTICIA. La señal cruzo el filtro), Por Lo contrera (SI NO) la señal fue bloqueada por el filtro.
+
+Restricciones
+1. Solo ultiza la ecuacion para hallar el resulado
+2. Que si cruza o no las señal con referencia acumulada es mayor al 30% la señal pasada.
