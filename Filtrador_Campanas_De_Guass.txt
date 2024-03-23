@@ -1,0 +1,36 @@
+Algoritmo Filtrador_Campanas_De_Guass
+	
+    // Declaración de variables
+    Definir n, parametro, u, valor_pi, e, porcent, x, fdp, porcent_total Como Real
+	
+    // Entrada de datos
+    Escribir "Ingresa la frecuencia de la señal: "
+    Leer n
+    parametro <- 300 // el umbral
+    u <- 1000 // la media
+    valor_pi <- 3.1416 // Valor de numero PI
+    e <- 2.71828 //base del logaritmo natura
+	
+    // Inicialización de variables
+    porcent <- 0
+    x <- 0
+	
+    // Bucle de cálculo
+    Para i <- 1 Hasta n Con Paso 1 Hacer
+        x <- x + 1
+        fdp <- (1 / (parametro * raiz(2 * valor_pi))) * e ^ (-1/2 * ((x - u) / parametro) ^ 2) //Ecuacion la función de densidad de probabilidad (fdp) 
+        porcent <- porcent + fdp
+        porcent_total <- porcent
+    FinPara
+	
+    // Salida de resultados
+    Escribir " El Porcentaje Es total: ", porcent_total
+	
+    // Condición de paso o bloqueo
+    Si porcent_total > 0.30 Entonces
+        Escribir "BUENA NOTICIA.La señal Cruzo El Filtro:"
+    Sino
+        Escribir "La Señal Fue Bloqueada Por El Filtro:"
+    FinSi
+	
+FinAlgoritmo
